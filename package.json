@@ -11,15 +11,19 @@
     "graphql-tag": "^1.0.0",
     "react": "^15.4.1",
     "react-apollo": "^0.6.0",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "snyk": "^1.316.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/config/eslint.js"
-  }
+  },
+  "snyk": true
 }
